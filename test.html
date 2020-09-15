@@ -6,25 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pageTitle</title>
   <script>
-    function averageBig(list) {
-      let sum = 0;
-      let bigNumbers = 0;
-      for (i = 0; i <= list.length - 1; i++) {
-        if (list[i] > 1000) {
-          sum += list[i];
-          bigNumbers++;
-        }
-      }
-      if (bigNumbers != 0) {
-        return (sum / bigNumbers).toFixed(1);
-      } else {
-        return 0;
-      }
-    }
-
     function myfunction() {
-      list1 = [70, 950, 671, 6];
-      var fn = averageBig(list1);
+      var fn = "This is a happy day";
       document.getElementById("div_id").innerHTML = fn;
     }
   </script>
@@ -33,6 +16,7 @@
   <h1>Test page</h1>
   <p>this is a paragrah</p>
   <button type="button" onclick="myfunction()">textOnButton</button>
+  <br><br>
   <div id="div_id"></div>
 </body>
 </html>
