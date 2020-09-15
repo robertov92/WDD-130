@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Roberto Villanueva">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pageTitle</title>
+  <script>
+    function averageBig(list) {
+      let sum = 0;
+      let bigNumbers = 0;
+      for (i = 0; i <= list.length - 1; i++) {
+        if (list[i] > 1000) {
+          sum += list[i];
+          bigNumbers++;
+        }
+      }
+      if (bigNumbers != 0) {
+        return (sum / bigNumbers).toFixed(1);
+      } else {
+        return 0;
+      }
+    }
+
+    function myfunction() {
+      list1 = [70, 950, 671, 6];
+      var fn = averageBig(list1);
+      document.getElementById("div_id").innerHTML = fn;
+    }
+  </script>
+</head>
+<body>
+  <h1>Test page</h1>
+  <button type="button" onclick="myfunction()">textOnButton</button>
+  <div id="div_id"></div>
+</body>
+</html>
