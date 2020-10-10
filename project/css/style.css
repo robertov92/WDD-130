@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Raleway:wght@500&display=swap');
+:root {
+    --primary-color: #A9B2B7;
+    --secondary-color: #3B3C54;
+    --accent1-color: #A41623;
+    --accent2-color: #FAE8D0;
+    --heading-font: 'Playfair Display', serif;
+    --paragraph-font: 'Raleway', sans-serif;
+}
+
+html {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    ;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+main {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+}
+
+footer {
+    color: whitesmoke;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font);
+    line-height: 1em;
+    text-align: center;
+    font-size: 1.5em
+}
+
+nav>ul {
+    list-style-type: none;
+    display: -webkit-inline-flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 20px
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent2-color)
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    background-color: var(--primary-color)
+}
