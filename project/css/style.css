@@ -10,12 +10,11 @@
 
 html {
     background-color: var(--secondary-color);
-    font-family: var(--paragraph-font);
-    ;
 }
 
 body {
     background-color: var(--primary-color);
+    font-size: 16px;
 }
 
 header,
@@ -26,47 +25,30 @@ footer {
 }
 
 header {
+    background-color: var(--secondary-color);
     color: var(--accent2-color);
-    background-color: var(--secondary-color);
-}
-
-main {
-    font-size: 1.3em;
-    color: var(--secondary-color);
-}
-
-footer {
-    color: whitesmoke;
-    background-color: var(--secondary-color);
-    text-align: center;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    font-size: 2.5em;
-}
-
-h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
     background-color: var(--secondary-color);
-    font-family: var(--heading-font);
+    font-family: sans-serif;
     line-height: 1em;
-    text-align: center;
-    font-size: 1.5em
+    text-align: left;
+    font-size: 1.2em
 }
 
 nav>ul {
     list-style-type: none;
-    display: -webkit-inline-flex;
+    display: flex;
 }
 
 nav a {
-    padding: 1em;
-    min-width: 20px
+    padding: 10px;
+    min-width: 10px
 }
 
 nav a:link,
@@ -77,4 +59,63 @@ nav a:visited {
 nav a:hover {
     color: var(--accent2-color);
     background-color: var(--primary-color)
+}
+
+main {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.7em;
+    color: var(--accent1-color);
+    text-align: center;
+}
+
+main>p {
+    padding: 15px;
+}
+
+#your-home {
+    display: flex;
+}
+
+#wedding-receptions {
+    display: flex;
+}
+
+#img1,
+#img2 {
+    padding: 30px;
+}
+
+footer {
+    color: whitesmoke;
+    background-color: var(--secondary-color);
+    align-items: center;
+}
+
+footer>div {
+    display: flex;
+    padding-top: 15px;
+}
+
+#contact-info>ul {
+    list-style-type: none;
+    margin-left: 80px;
+}
+
+#social-media-links {
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+#bottom {
+    margin-left: 120px;
 }
