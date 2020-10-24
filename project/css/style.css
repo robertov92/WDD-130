@@ -30,7 +30,7 @@ header {
     padding: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav {
@@ -78,10 +78,6 @@ h2 {
     text-align: center;
 }
 
-main>p {
-    padding: 15px;
-}
-
 #your-home {
     display: flex;
 }
@@ -104,6 +100,10 @@ footer {
 footer>div {
     display: flex;
     padding-top: 15px;
+}
+
+.indented {
+    text-indent: 20px;
 }
 
 #contact-info>ul {

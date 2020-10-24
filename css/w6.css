@@ -1,0 +1,224 @@
+body {
+    font-size: 16px;
+    background-color: #fff;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Activity 1 styles */
+
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.red1 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.green1 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.gold1 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+}
+
+.blue1 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+}
+
+
+/* Layout 2 */
+
+.content2 {
+    position: relative;
+    height: 500px;
+}
+
+.red2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+}
+
+.green2 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.gold2 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.blue2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+
+
+/* Layout 3 */
+
+.content3 {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 100px;
+    justify-items: center;
+}
+
+.red3 {
+    width: 100%;
+    height: 150px;
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.green3 {
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+
+.gold3 {
+    width: 100%;
+    height: 300px;
+    background-color: gold;
+}
+
+.blue3 {
+    width: 100%;
+    height: 150px;
+    background-color: blue;
+    grid-column: 1/3;
+}
+
+
+/* Layout 4 */
+
+.content4 {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.red4 {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    grid-row: 1/4;
+}
+
+.green4 {
+    width: 100%;
+    height: 150px;
+    background-color: green;
+}
+
+.gold4 {
+    width: 100%;
+    height: 150px;
+    background-color: gold;
+}
+
+.blue4 {
+    width: 100%;
+    height: 150px;
+    background-color: blue;
+}
+
+
+/* Layout 5 */
+
+.red5 {
+    width: 800px;
+    height: 100px;
+    background-color: red;
+}
+
+.green5 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+}
+
+.gold5 {
+    padding: 30px 30px;
+    width: 740px;
+    height: 400px;
+    background-color: gold;
+}
+
+.blue5 {
+    width: 800px;
+    height: 100px;
+    background-color: blue;
+}
+
+
+/* Layout 6 */
+
+.content6 {
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(130px, auto);
+}
+
+.red6 {
+    background-color: red;
+    grid-row: 1/3;
+    grid-column: 1/5;
+    z-index: 1;
+}
+
+.green6 {
+    background-color: green;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    z-index: 3;
+}
+
+.gold6 {
+    background-color: gold;
+    grid-row: 3/7;
+    grid-column: 5/7;
+    z-index: 3;
+}
+
+.blue6 {
+    background-color: blue;
+    grid-row: 2/6;
+    grid-column: 2/6;
+    z-index: 2;
+}
