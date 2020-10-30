@@ -8,6 +8,12 @@
     --paragraph-font: 'Raleway', sans-serif;
 }
 
+@media screen and (max-width: 550px) {
+    .______ {
+        display: block;
+    }
+}
+
 html {
     background-color: var(--secondary-color);
 }
@@ -20,7 +26,7 @@ body {
 header,
 main,
 footer {
-    max-width: 960px;
+    max-width: 962px;
     margin: 0 auto;
 }
 
@@ -78,44 +84,69 @@ h2 {
     text-align: center;
 }
 
-#your-home {
-    display: flex;
-}
-
-#wedding-receptions {
-    display: flex;
-}
-
-#img1,
-#img2 {
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 30px;
+    place-items: center;
     padding: 30px;
 }
 
+.family-search {
+    grid-column: 1/3;
+}
+
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
     color: whitesmoke;
     background-color: var(--secondary-color);
-    align-items: center;
-}
-
-footer>div {
-    display: flex;
-    padding-top: 15px;
-}
-
-.indented {
-    text-indent: 20px;
 }
 
 #contact-info>ul {
     list-style-type: none;
-    margin-left: 80px;
 }
 
-#social-media-links {
-    margin-top: 15px;
-    margin-left: 300px;
+.indented {
+    text-indent: 18px;
 }
 
-#bottom {
-    margin-left: 120px;
+#copyright {
+    grid-column: 1/3;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-box img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, .5);
+    margin: 7em 6em;
+    padding: 1em;
+    text-align: center;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: var(--accent2-color);
+    font-size: 1.2em;
+}
+
+#img1,
+#img2 {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
