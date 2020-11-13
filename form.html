@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 450px;
+            /* Form outline */
+            padding: 1em;
+            border: 3px solid rgb(134, 134, 134);
+            border-radius: 1em;
+            background-color: rgb(216, 216, 216);
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        form li+li {
+            margin-top: 1.5em;
+        }
+        
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        
+        input,
+        textarea {
+            /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+            font: 1em sans-serif;
+            /* Uniform text field size */
+            width: 300px;
+            box-sizing: border-box;
+            /* Match form field borders */
+            border: 2px solid #999;
+            padding: 7px;
+        }
+        
+        input:focus,
+        textarea:focus {
+            /* Additional highlight for focused elements */
+            border-color: rgb(49, 49, 49);
+        }
+        
+        textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 5em;
+        }
+        
+        .button {
+            /* Align buttons with the text fields */
+            padding-left: 130px;
+            /* same size as the label elements */
+        }
+        
+        button {
+            /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+            margin-left: .5em;
+            background-color: rgb(56, 56, 56);
+            padding: 15px;
+            color: cornsilk;
+            border: none;
+            font-size: large;
+            border-radius: 7px;
+        }
+        
+        #feedback {
+            /* add styling and layout properties of your own design here as needed */
+            display: none;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 30px;
+            font-size: 20px;
+            /* we will make the element invisible until the form is submitted successfully */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
