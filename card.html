@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+        
+        .card {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 100%;
+            width: 320px;
+            box-shadow: 1px 1px 4px 1px #ccc;
+            border: solid 1px #ccc;
+            border-radius: 3px 3px;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        
+        p {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            color: rgb(63, 63, 63);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            font-size: 0.9rem;
+            font-weight: 550;
+            padding: 15px;
+            margin: 0;
+        }
+        
+        footer {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            padding: 0 20px 20px 20px;
+            color: #888;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .7rem;
+            font-weight: 550;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .buttons {
+            display: inline-flex;
+        }
+        
+        button {
+            background-color: white;
+            border-color: rgb(143, 143, 143);
+            border-width: 1px;
+            padding: 6px;
+            color: rgb(146, 146, 146);
+            font-size: .7rem;
+            font-weight: 550;
+        }
+        
+        .viewButton {
+            border-right: none;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .editButton {
+            border-radius: 0 3px 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <img src="https://picsum.photos/320/210" alt="image">
+        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <footer>
+            <div class="buttons">
+                <button class="viewButton">View</button>
+                <!--
+                --><button class="editButton">Edit</button>
+            </div>
+
+            <span>9 mins</span>
+        </footer>
+    </article>
+</body>
+
+</html>
