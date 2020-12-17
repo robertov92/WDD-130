@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+    --primary-color: #080708;
+    --secondary-color: #3772FF;
+    --accent1-color: #DF2935;
+    --accent2-color: #FDCA40;
+}
+
+html {
+    font-family: 'Sniglet', cursive;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-size: 16px;
+}
+
+h1,
+h4 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--secondary-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Sniglet', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--accent2-color);
+    border: var(--primary-color) solid 1px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.card {
+    grid-template-columns: 100%;
+    width: 320px;
+    box-shadow: 1px 1px 4px 1px #ccc;
+    border: solid 1px rgb(56, 56, 56);
+    border-radius: 3px 3px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card p {
+    color: rgb(63, 63, 63);
+    line-height: 1.5;
+    padding: 15px;
+    margin: 0;
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+}
+
+button {
+    background-color: white;
+    border-color: rgb(143, 143, 143);
+    border-width: 1px;
+    border-radius: 3px;
+    margin: auto;
+    padding: 6px;
+    color: rgb(146, 146, 146);
+    font-size: .7rem;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--accent2-color);
+    border: var(--primary-color) solid 1px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent3-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    background-color: rgb(230, 230, 230);
+}
+
+#articles {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    #articles {
+        display: block;
+        margin: 20px;
+    }
+}
+
+.blog {
+    margin-bottom: 20px;
+    margin: auto;
+    max-width: 700px;
+}
+
+.date {
+    letter-spacing: normal;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 4px solid var(--accent1-color);
+    border-bottom: 2px solid var(--accent1-color);
+}
+
+#help {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: solid 1px black;
+}
+
+form {
+    margin: 50px auto;
+    width: 650px;
+    padding: 3em;
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 5px;
+    background-color: rgb(199, 199, 199);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input,
+textarea {
+    font: 1em 'Sniglet', cursive;
+    width: 500px;
+    box-sizing: border-box;
+    border: 2px solid #999;
+    padding: 7px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(49, 49, 49);
+}
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
+
+#feedback {
+    display: none;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#feedback2 {
+    display: none;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#form2 {
+    grid-column: 1/2;
+    width: 300px;
+}
+
+#form2 input,
+#form2 textarea {
+    width: 300px;
+}
+
+#form2 label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+#contact {
+    grid-column: 2/3;
+    border: solid 2px grey;
+    border-radius: 5px;
+}

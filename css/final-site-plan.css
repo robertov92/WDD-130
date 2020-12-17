@@ -34,7 +34,7 @@ h6 {
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 header {

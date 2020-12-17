@@ -4,11 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Next Level Code</title>
+    <meta name="description" content="A place to solve your programming questions">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <h1>Blog</h1>
+    <header>
+        <div class="logo">
+            <picture><img src="images/final-icon-128.png" alt="logo"></picture>
+            <h1>Next Level Code</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <h2>Blog</h2>
+            <h3>Here you can post new questions or answer other people's questions.</h3>
+        </div>
+
+        <div class="blog">
+
+            <hr>
+            <h2>Welcome!</h2>
+            <div class="date">5 December 2020</div>
+            <img id="help" src="images/help.jpg" alt="help">
+            <p class="paragraph">Welcome to the Blog section! Here is where you can post questions and answers. Please, be aware that this site is currently under construction and some features are not fully working yet. But don't worry, we are working hard to make sure everything
+                works soon.</p>
+            <p class="paragraph">It is important to us that you would benefit from this site and its content. We are not a non-profit and do not charge to use this website. We would like to grow as a community and would ask you, if you think this website is useful, to like
+                us and share us on social media.</p>
+            <p class="paragraph">Please be aware that sometimes it might take a little while to respond to your questions. We ask for your patience as we start gathering more and more people to help. If you can help others through this blog, please do so. Helping others is
+                the main reason for this site :)</p>
+            <p>By Roberto Villanueva</p>
+            <div>
+                <button class="buttons">Leave a comment:</button>
+            </div>
+            <hr>
+        </div>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                </li>
+
+                <li>
+                    <label for="msg">New post/question:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Post new conversation</button>
+                </li>
+            </ul>
+        </form>
+        <script>
+            const feedbackElement = document.getElementById('feedback');
+            const formElement = document.forms[0];
+
+            formElement.addEventListener('submit', function(e) {
+                e.preventDefault();
+                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! This should post a new item here! It will do that when I learn how to add that functionality :P';
+                feedbackElement.style.display = "block";
+            });
+        </script>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Link"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram Link"></a>
+        </div>
+
+        <div>
+            <p>Next Level Code, Inc. | 800-555-5555 | info@nxcode.org</p>
+        </div>
+
+        <div>
+            <p>Copyright © 2020 Next Level Code | All Rights Reserved |
+                <a href="https://robertov92.github.io/final-site-plan.html">Site Plan</a> | Privacy and Cookie Statement | Roberto Villanueva</p>
+        </div>
+    </footer>
 </body>
 
 </html>
