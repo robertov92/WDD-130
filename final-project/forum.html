@@ -19,7 +19,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="forum.html">Forum</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -29,7 +29,7 @@
     <main>
 
         <div>
-            <h2>Blog</h2>
+            <h2>Forum</h2>
             <h3>Here you can post new questions or answer other people's questions.</h3>
         </div>
 
@@ -37,12 +37,13 @@
 
             <hr>
             <h2>Welcome!</h2>
-            <div class="date">5 December 2020</div>
+            <div class="date">December 5, 2020</div>
             <img id="help" src="images/help.jpg" alt="help">
-            <p class="paragraph">Welcome to the Blog section! Here is where you can post questions and answers. Please, be aware that this site is currently under construction and some features are not fully working yet. But don't worry, we are working hard to make sure everything
-                works soon.</p>
-            <p class="paragraph">It is important to us that you would benefit from this site and its content. We are not a non-profit and do not charge to use this website. We would like to grow as a community and would ask you, if you think this website is useful, to like
-                us and share us on social media.</p>
+            <p class="paragraph">Welcome to the Forum section! Here is where you can post questions. Please, be aware that this site is currently under construction and some features are not fully working yet. But don't worry, we are working hard to make sure everything works
+                soon.
+            </p>
+            <p class="paragraph">It is important to us that you would benefit from this site and its content. We are not a non-profit and do not charge our users. We would like to grow as a community and would ask you, if you think this website is useful, to like us and share
+                us on social media (links below!).</p>
             <p class="paragraph">Please be aware that sometimes it might take a little while to respond to your questions. We ask for your patience as we start gathering more and more people to help. If you can help others through this blog, please do so. Helping others is
                 the main reason for this site :)</p>
             <p>By Roberto Villanueva</p>
@@ -51,11 +52,31 @@
             </div>
             <hr>
         </div>
+
+        <div class="blog">
+
+            <hr>
+            <h2>Why using this website instead of others more popular sites?</h2>
+            <div class="date">December 11, 2020</div>
+            <p class="paragraph">That is a great question! There are big companies for pretty much everything, for example, restaurants. There are hundreds if not thousands of McDonals out there to satisfy our hunger, though that is not enough reason to get lunch at a local
+                restaurant.
+            </p>
+            <p class="paragraph">Many times small places want to give better service because they want to attract people and grow. That's what we are doing! We want to be more helpful than the other websites, so we can gain your trust and keep growing.</p>
+            <p class="paragraph">Besides getting questions answered, we would like to give a more personalized mentoring experience, and all this for free! Now you know, check us out and see if you like the local restaurant better than McDonald's.</p>
+            <p>By Roberto Villanueva</p>
+            <div>
+                <button class="buttons">Leave a comment:</button>
+            </div>
+            <hr>
+        </div>
+        <div>
+            <h2>Ask a question!</h2>
+        </div>
         <div id="feedback"></div>
         <form action="/my-handling-form-page" method="post">
             <ul>
                 <li>
-                    <label for="name">Name:</label>
+                    <label for="name">Your name:</label>
                     <input type="text" id="name" name="user_name">
                 </li>
 
@@ -65,7 +86,7 @@
                 </li>
 
                 <li>
-                    <label for="msg">New post/question:</label>
+                    <label for="msg">New question:</label>
                     <textarea id="msg" name="user_message"></textarea>
                 </li>
                 <li class="button">
